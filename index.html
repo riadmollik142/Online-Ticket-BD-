@@ -1,35 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Ticket BD</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2d8f2d;
-            padding: 20px;
-            color: white;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Ticket BD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #2d8f2d;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1f6b1f;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      padding: 30px;
+      background-color: white;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .image img {
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background-color: #2d8f2d;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .btns {
+      margin-top: 10px;
+    }
+
+    .btns button {
+      margin-right: 10px;
+      background-color: #1f6b1f;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btns button:hover {
+      background-color: #155a15;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Online Ticket BD</h1>
-    </header>
-    <main>
-        <p>Search and book tickets for all Bangladeshi transport services!</p>
-    </main>
+
+  <header>
+    <h1>Online Ticket BD</h1>
+  </header>
+
+  <nav>
+    <a href="#">Companies</a>
+    <a href="#">Schedules</a>
+    <a href="#">Seat Plans</a>
+    <a href="#">Admin</a>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <h2>Welcome to Online Ticket BD</h2>
+      <p>Search and book tickets from most Bangladeshi transport services.</p>
+      <h3>28 Seat Business Class</h3>
+      <div class="btns">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+      </div>
+
+      <h3>36/40 Seat Economy Class</h3>
+      <p>Available for search and booking.</p>
+
+      <h3>30 Seat Sleeper Coach</h3>
+      <p>Comfortable long-distance coaches.</p>
+    </div>
+
+    <div class="image">
+      <img src="images/bus.jpg" alt="Mollik Coach Service">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Mollik Group Ltd.
+  </footer>
+
 </body>
 </html>
